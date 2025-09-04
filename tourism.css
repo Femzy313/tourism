@@ -1,0 +1,457 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(/tourism-website/background-home-desktop.jpg);
+    background-repeat: no-repeat;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+    position: sticky;
+    top: 0;
+}
+.logo-container img{
+   padding-left: 30px;
+}
+.links-container{
+    background-color: rgb(138, 138, 151);
+    display: flex;
+    gap: 40px;
+    padding-right: 25vh;
+    padding-left: 25vh;
+}
+.links-container a{
+    color: white;
+    padding-top: 15px;
+    text-decoration: none;
+}
+.links-container a:hover{
+    color: red;
+}
+.links-container a:active{
+    color: green;
+    text-decoration: underline;
+}
+.hamburger img{
+    display: none;
+}
+.close img{
+    display: none;
+}
+
+
+/*Home*/
+.home{
+    display: flex;
+    gap: 85vh;
+    padding-left: 35vh;
+    padding-top: 35vh;
+    padding-bottom: 60px;
+}
+.home h3{
+    font-size: 12px;
+    padding-bottom: 15px;
+    color: white;
+    letter-spacing: 5px;
+}
+.space h6{
+    color: white;
+    font-weight: bold;
+    font-size: 14vh;
+    padding-bottom: 30px;
+}
+.space-explore p{
+    color: white;
+    width: 45vh;
+    font-size: 12px;
+    line-height: 20px;
+}
+.explore{
+    border: 1px solid;
+    width: 20vh;
+    height: 20vh;
+    border-radius: 100%;
+    padding-top: 40px;
+    text-align: center;
+    background-color: white;
+    font-size: 25px;
+    margin-top: 100px;
+}
+
+/*DESTINATION*/
+.destination{
+    color: white;
+    padding: 0 15vh;
+    background-image: url(/tourism-website/background-destination-desktop.jpg);
+    padding-bottom: 10px;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 25vh;
+    padding-bottom: 40px;
+}
+.destination img{
+    width: 40vh;
+}
+.destination h4{
+    font-size: 20px;
+    padding-left: 10vh;
+    padding-bottom: 20px;
+}
+.destination p{
+    width: 40vh;
+    font-size: 15px;
+    line-height: 25px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+
+/*Crew*/
+.crew{
+    background-image: url(/tourism-website/background-crew-desktop.jpg);
+    height: 100%;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding-left: 40px;
+    padding-top: 20vh;
+    padding-bottom: 15vh;
+}
+/*.crews{
+    border: 2px solid grey;
+    width: 83vh;
+    height: 150vh;
+    border-radius: 30px;
+}*/
+.crew img{
+    width: 80vh;
+    height: 90vh;
+    padding-bottom: 10px;
+}
+.crew h2{
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+.crew b{
+    font-size: 18px;
+}
+.crew p{
+    font-size: 18px;
+    width: 80vh;
+    line-height: 22px;
+    padding-top: 10px;
+}
+
+
+/*Technology*/
+.technology{
+    background-image: url(/tourism-website/background-technology-desktop.jpg);
+    color: white;
+    padding-bottom: 20vh;
+    padding-top: 30vh;
+}
+.technologys{
+    border: 1px solid;
+    width: 81vh;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.technology img{
+   padding-bottom: 30px;
+   width: 100%;
+}
+.technology h2{
+    padding-bottom: 20px;
+}
+.technology p{
+    padding-bottom: 30px;
+    width:80vh;
+}
+
+
+@media(max-width:1440px){
+    .home{
+    display: flex;
+    gap: 55vh;
+    padding-left: 30vh;
+   }
+   .destination{
+    padding-left: 5px;
+    padding-right: 5px;
+   }
+   .technologys{
+    width: 61vh;
+   }
+   .technology p{
+    width:60vh;
+    }
+}
+@media(max-width:1369px){
+    .destination img{
+    width: 80%;
+    }
+    .destination h4{
+    font-size: 20px;
+    padding-left: 70px;
+    padding-bottom: 20px;
+    }
+    .destination p{
+    width: 80%;
+    font-size: 20px;
+    line-height: 27px;
+    padding-left: 29px;
+   }
+   .crew img{
+    width: 80%;
+   }
+   .crew h2{
+    font-size: 25px;
+  }
+  .crew b{
+    font-size: 20px;
+  }
+  .crew p{
+    font-size: 22px;
+    width: 80%;
+    line-height: 27px;
+  }
+}
+@media(max-width:1280px){
+    .home{
+    display: flex;
+    gap: 50%;
+    padding-left: 140px;
+   }
+    .technologys{
+    width: 62vh;
+   }
+}
+@media(max-width:1030px){
+    .links-container{
+    padding-right: 100px;
+    padding-left: 100px;
+   }
+    .home{
+    display: flex;
+    gap: 30%;
+    padding-left: 100px;
+   }
+   .destination{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+     background-repeat: repeat;
+     padding-left: 30px;
+   }
+}
+@media(max-width:780px){
+    body{
+        background-image: url(/tourism-website/background-home-tablet.jpg);
+    }
+    .links-container{
+    gap: 20px;
+    padding-right: 60px;
+    padding-left: 60px;
+   }
+    .home{
+    display: flex;
+    gap: 15%;
+    padding-left: 80px;
+   }
+   .space-explore p{
+    color: white;
+    width: 45vh;
+    font-size: 20px;
+    line-height: 25px;
+   }
+   .destination{
+    background-image: url(/tourism-website/background-destination-tablet.jpg);
+    background-repeat: no-repeat;
+   }
+   .crew{
+    background-image: url(/tourism-website/background-crew-tablet.jpg);
+   }
+   .crew img{
+    width: 80%;
+    height: 40%;
+   }
+   .technology{
+    background-image: url(/tourism-website/background-technology-tablet.jpg);
+   }
+   .technology h2{
+    font-size: 25px;
+  }
+  .technology p{
+    padding-bottom: 30px;
+    width: 100%;
+    font-size: 22px;
+    line-height: 25px;
+   }
+}
+@media(max-width:730px){
+    .home{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 170px;
+   }
+   .home h3{
+    font-size: 18px;
+   }
+   .links-container{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    position: fixed;
+    margin-top: 70px;
+    width: 100%;
+    left: -100%;
+    transition: left 0.4s ease;
+   }
+   .links-container.active{
+    left: 0;
+   }
+   nav{
+    position: relative;
+   }
+   .hamburger img{
+    display: block;
+    padding-right: 100px;
+   }
+   .close img{
+    display: none;
+    padding-right: 100px;
+   }
+   .space h6{
+    font-size: 14vh;
+    font-weight: 100;
+  }
+   .space-explore p{
+    color: white;
+    width: 45vh;
+    font-size: 24px;
+    line-height: 33px;
+   }
+    .destination{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+     background-repeat: repeat;
+     padding-left: 90px;
+   }
+   .destination h4{
+    font-size: 30px;
+    padding-left: 25px;
+  }
+  .destination p{
+    width: auto;
+    font-size: 25px;
+    line-height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+  }
+  .crew{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .crew img{
+    width: 100%;
+    height: auto;
+   }
+   .crew h2{
+    font-size: 30px;
+  }
+  .crew b{
+    font-size: 30px;
+  }
+  .crew p{
+    font-size: 30px;
+    width: auto;
+    line-height: 33px;
+    padding-right: 5px;
+  }
+  .technology h2{
+    font-size: 30px;
+  }
+  .technology p{
+    padding-bottom: 30px;
+    width: 100%;
+    font-size: 27px;
+    line-height: 30px;
+   }
+}
+@media(max-width:530px){
+     .home{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    padding-bottom: 10px;
+    padding-left: 70px;
+   }
+}
+@media(max-width:470px){
+    body{
+        background-image: url(/tourism-website/background-home-mobile.jpg);
+    }
+    nav{
+        padding-left: 30px;
+    }
+    .home{
+    padding-bottom: 10px;
+    padding-left: 30px;
+    }
+    .destination{
+    padding-left: 20px;
+     background-image: url(/tourism-website/background-destination-mobile.jpg);
+    background-repeat: repeat;
+   }
+   .crew{
+    padding-left: 20px;
+     background-image: url(/tourism-website/background-crew-mobile.jpg);
+   }
+   .crew img{
+    width: 80%;
+    height: auto;
+   }
+   .crew h2{
+    font-size: 25px;
+  }
+  .crew b{
+    font-size: 25px;
+  }
+  .crew p{
+    font-size: 25px;
+    width: 90%;
+    line-height: 25px;
+  }
+  .technologys{
+    background-image: url(/tourism-website/background-technology-mobile.jpg);
+    width: 80%;
+  }
+  .technology img{
+   width: 100%;
+   }
+   .technology p{
+    width:100%;
+   }
+}
+@media(max-width:380px){
+    .home h3{
+    font-size: 14px;
+    letter-spacing: 5px;
+    }
+   .space h6{
+    font-size: 12vh;
+    }
+    .space-explore p{
+    width: 35vh;
+    font-size: 26px;
+    line-height: 33px;
+   }
+}
